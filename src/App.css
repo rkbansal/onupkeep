@@ -1,0 +1,8 @@
+.App {
+  text-align: left;
+  display: flex;
+  position: relative;
+}
+.space {
+  flex: 1;
+}
