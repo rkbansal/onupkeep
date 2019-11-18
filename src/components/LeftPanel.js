@@ -32,6 +32,7 @@ export class LeftPanel extends Component {
       if (route.path.split("/")[1] === window.location.pathname.split("/")[1]) {
         return route;
       }
+      return false;
     });
     if (activeRoute) {
       console.log("activeRoute", activeRoute);
