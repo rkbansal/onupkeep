@@ -37,16 +37,25 @@ export const UserAssignHeader = styled.h1`
 export const UserAssignContainer = styled.div`
   display: flex;
   flex-direction: column;
+  position : relative;
 
   @media (min-width: 960px) {
     flex-direction: row;
   }
 `;
+
 export const UserDetailsDiv = styled.div`
-  flex-grow: 1;
+  box-sizing: content-box;
+  // flex-grow: 1;
+  width : 50%;
   background-color: white;
   margin: 0 10px;
   border: 1px solid lightgray;
   border-radius: 4px;
   color: #515458;
+  @media (max-width: 960px) {
+    flex-grow: 1;
+    width : auto;
+    margin-right: 10px;
+  }
 `;

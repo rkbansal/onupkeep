@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const LeftPanelDiv = styled.div`
   min-height: 100vh;
   color: white;
+  z-index : 999;
   display: ${props => (props.state ? "flex" : "none")};
   position: absolute;
   @media (min-width: 960px) {
@@ -22,9 +23,6 @@ export const Logo = styled.div`
   h2 {
     margin-left: 5px;
     font-weight: 600;
-  }
-  @media (min-width: 960px) {
-    margin: 10px 35px;
   }
 `;
 export const LogoIcon = styled.img``;
@@ -84,9 +82,13 @@ export const ReportItems = styled.div`
   line-height: 50px;
   margin: 0 5px;
   padding: 0 15px;
-  cursor: pointer;
   border-bottom: 2px solid
-    ${props => (props.active === props.item ? "#4a90e2" : "transparent")};
+    ${props => (props.active   === props.item ? "#4a90e2" : "transparent")};
+  cursor: pointer;
+
+  @media (max-width: 960px) {
+    padding : 0;
+  }
 `;
 export const AddReport = styled.div`
   line-height: 50px;
@@ -94,4 +96,12 @@ export const AddReport = styled.div`
   font-size: 11px;
   color: #4a90e2;
   cursor: pointer;
+  &:after{
+    content :"Add Coustom Reports"
+  }
+  @media (max-width: 960px) {
+    &:after{
+      content :"Add"
+    }
+  }
 `;

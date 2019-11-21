@@ -11,10 +11,10 @@ export class UserAssign extends Component {
   render() {
     return (
       <UserAssignDiv>
-        <UserAssignHeader>sdjo</UserAssignHeader>
+        <UserAssignHeader>User Assigned</UserAssignHeader>
         <UserAssignContainer>
           <UserDetailsDiv>
-            <div>kjsdbkb</div>
+            <Line title={"User WO Stats"} data={[40, 23, 70, 80, 81, 56, 55, 40, 59, 40, 23, 70, 80, 81, 56, 55, 40]}/>
           </UserDetailsDiv>
           <UserDetailsDiv>
             <Line title={"User WO Graph"} data={[65, 59, 80, 81, 56, 55, 40]}/>

@@ -55,7 +55,7 @@ export class Reports extends Component {
             </ReportItems>
           ))}
           <div className="space"></div>
-          <AddReport>+ Add Custom Report</AddReport>
+          <AddReport>+</AddReport>
         </ReportNav>
         <ReportRoute />
       </Fragment>
