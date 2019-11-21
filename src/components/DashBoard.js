@@ -1,13 +1,22 @@
 import React, { Component } from "react";
+import {DashBoardWrapper, FlexRowWrapper} from './style';
 import Card from "./Card";
 
 export class DashBoard extends Component {
   render() {
     return (
-      <div>
+      <DashBoardWrapper>
         <h1>DashBoard</h1>
         <Card />
-      </div>
+        <FlexRowWrapper>
+          <Card />
+          <Card />
+        </FlexRowWrapper>
+        <FlexRowWrapper>
+          <Card />
+          <Card />
+        </FlexRowWrapper>
+      </DashBoardWrapper>
     );
   }
 }

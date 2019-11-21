@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import {CardWrapper} from './style';
 
 export default class Card extends Component {
   render(){
-    return(<div>Card</div>);
+    return(<CardWrapper></CardWrapper>);
   }
 }

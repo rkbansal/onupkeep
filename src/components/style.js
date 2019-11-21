@@ -105,3 +105,25 @@ export const AddReport = styled.div`
     }
   }
 `;
+
+export const DashBoardWrapper = styled.div`
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+`;
+
+export const FlexRowWrapper = styled.div`
+  display: flex;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  flex-grow: 1;
+  background-color: #ffffff;
+  border: 1px solid #e7e6e9;
+  border-radius: 5px;
+  height: 350px;
+  margin: 10px;
+`;
