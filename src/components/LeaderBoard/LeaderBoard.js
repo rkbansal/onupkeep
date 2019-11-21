@@ -1,14 +1,15 @@
 import React, { Component, Fragment } from "react";
 import TimeLine from "./TimeLine";
 import UserAssign from "./UserAssign";
+import {LeaderBoardDiv }from './style'
 
 export class LeaderBoard extends Component {
   render() {
     return (
-      <Fragment>
+      <LeaderBoardDiv>
         <TimeLine />
         <UserAssign />
-      </Fragment>
+      </LeaderBoardDiv>
     );
   }
 }

@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const LeaderBoardDiv = styled.div`
+  // @media (min-width: 960px) {
+    overflow: scroll;
+    height: calc(100vh - 100px);
+  // }
+`;
+
 // TIME LINE
 export const LeaderBoardTimeLine = styled.div`
   background-color: white;
@@ -37,7 +44,7 @@ export const UserAssignHeader = styled.h1`
 export const UserAssignContainer = styled.div`
   display: flex;
   flex-direction: column;
-  position : relative;
+  position: relative;
 
   @media (min-width: 960px) {
     flex-direction: row;
@@ -47,7 +54,7 @@ export const UserAssignContainer = styled.div`
 export const UserDetailsDiv = styled.div`
   box-sizing: content-box;
   // flex-grow: 1;
-  width : 50%;
+  width: 50%;
   background-color: white;
   margin: 0 10px;
   border: 1px solid lightgray;
@@ -55,7 +62,7 @@ export const UserDetailsDiv = styled.div`
   color: #515458;
   @media (max-width: 960px) {
     flex-grow: 1;
-    width : auto;
+    width: auto;
     margin-right: 10px;
   }
 `;

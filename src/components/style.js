@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const LeftPanelDiv = styled.div`
   min-height: 100vh;
   color: white;
-  z-index : 999;
+  z-index: 999;
   display: ${props => (props.state ? "flex" : "none")};
   position: absolute;
   @media (min-width: 960px) {
@@ -83,11 +83,11 @@ export const ReportItems = styled.div`
   margin: 0 5px;
   padding: 0 15px;
   border-bottom: 2px solid
-    ${props => (props.active   === props.item ? "#4a90e2" : "transparent")};
+    ${props => (props.active === props.item ? "#4a90e2" : "transparent")};
   cursor: pointer;
 
   @media (max-width: 960px) {
-    padding : 0;
+    padding: 0;
   }
 `;
 export const AddReport = styled.div`
@@ -96,12 +96,12 @@ export const AddReport = styled.div`
   font-size: 11px;
   color: #4a90e2;
   cursor: pointer;
-  &:after{
-    content :"Add Coustom Reports"
+  &:after {
+    content: "Add Coustom Reports";
   }
   @media (max-width: 960px) {
-    &:after{
-      content :"Add"
+    &:after {
+      content: "Add";
     }
   }
 `;

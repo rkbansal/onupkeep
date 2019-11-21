@@ -1,7 +1,6 @@
 * {
   user-select: none;
   box-sizing: content-box;
-  overflow : hidden;
 }
 body {
   margin: 0;
